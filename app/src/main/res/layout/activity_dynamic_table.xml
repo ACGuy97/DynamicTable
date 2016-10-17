@@ -15,6 +15,7 @@
 
     </TableLayout>
 
+    <!--If there are more items that can fit on screen, there will be a scrolling bar, allowing us to see the rest of the names-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,7 +23,8 @@
         <TableLayout
             android:id="@+id/tblBody"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
 
         </TableLayout>
     </ScrollView>
